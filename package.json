@@ -1,0 +1,17 @@
+{
+  "name": "pakvista-cicd",
+  "version": "1.0.0",
+  "description": "Static PakVista website for DevOps CI/CD term project",
+  "scripts": {
+    "lint:html": "htmlhint \"*.html\"",
+    "lint:css": "stylelint \"*.css\"",
+    "build": "parcel build \"*.html\" --dist-dir dist --public-url ./"
+  },
+  "devDependencies": {
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "htmlhint": "^1.1.4",
+    "parcel": "^2.12.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
